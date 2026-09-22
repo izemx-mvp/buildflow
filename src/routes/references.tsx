@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ReferencesPage } from "@/components/pages";
+export const Route = createFileRoute("/references")({ head: () => ({ meta: [{ title: "Références & expérience — Build Flow by AG" }, { name: "description", content: "Projets retail, bureaux, résidentiels et techniques au Maroc et à l’international." }, { property: "og:title", content: "Des projets qui parlent d’eux-mêmes — Build Flow" }, { property: "og:description", content: "Une expérience multi-secteurs et une expertise sans frontières." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: ReferencesPage });

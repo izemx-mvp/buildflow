@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ExpertisePage } from "@/components/pages";
+export const Route = createFileRoute("/expertise")({ head: () => ({ meta: [{ title: "Domaines d’intervention — Build Flow by AG" }, { name: "description", content: "Expertise en projets résidentiels, retail, bureaux et industrie." }, { property: "og:title", content: "Des projets variés, une méthode unique — Build Flow" }, { property: "og:description", content: "Nos domaines d’intervention en construction et aménagement." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: ExpertisePage });

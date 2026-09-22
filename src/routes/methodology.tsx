@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { MethodologyPage } from "@/components/pages";
+export const Route = createFileRoute("/methodology")({ head: () => ({ meta: [{ title: "Notre méthodologie — Build Flow by AG" }, { name: "description", content: "Une méthodologie structurée de l’analyse à la réception." }, { property: "og:title", content: "Une méthode structurée — Build Flow" }, { property: "og:description", content: "Six étapes, du premier jour à la livraison." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: MethodologyPage });

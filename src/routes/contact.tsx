@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ContactPage } from "@/components/pages";
+export const Route = createFileRoute("/contact")({ head: () => ({ meta: [{ title: "Contact — Build Flow by AG" }, { name: "description", content: "Parlons de votre projet de construction ou d’aménagement à Casablanca et au-delà." }, { property: "og:title", content: "Parlons de votre projet — Build Flow" }, { property: "og:description", content: "Contactez Build Flow by AG à Casablanca." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: ContactPage });
