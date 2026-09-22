@@ -5,3 +5,5 @@
 - [ ] Redesign Home and all six inner pages
 - [ ] Restyle header, footer, form, and client-logo fallbacks
 - [ ] Verify FR/EN, image uniqueness, routes, and four viewport widths
+
+- [ ] Mobile responsiveness pass across all seven pages
