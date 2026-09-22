@@ -180,3 +180,21 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+@utility blueprint-light {
+  background-image: linear-gradient(color-mix(in oklab, var(--brand) 5%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in oklab, var(--brand) 5%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@utility blueprint-dark {
+  background-image: linear-gradient(color-mix(in oklab, var(--brand-foreground) 6%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in oklab, var(--brand-foreground) 6%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@utility slant-top { clip-path: polygon(0 3rem,100% 0,100% 100%,0 100%); }
+@utility outline-number { color: transparent; -webkit-text-stroke: 1px color-mix(in oklab, var(--brand) 30%, transparent); font-weight: 800; line-height: 1; }
+@utility outline-number-light { -webkit-text-stroke-color: color-mix(in oklab, var(--brand-foreground) 35%, transparent); }
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal-visible{opacity:1;transform:none}
+.logo-track{animation:marquee 28s linear infinite}.logo-marquee:hover .logo-track{animation-play-state:paused}.method-progress{animation:progress-fill 1.4s ease both;animation-timeline:view();animation-range:entry 20% cover 65%}.map-pulse{animation:map-pulse 2s ease-out infinite;transform-origin:center}
+@keyframes marquee{to{transform:translateX(-50%)}}@keyframes progress-fill{from{width:0}to{width:100%}}@keyframes map-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.45)}}
+html{scroll-behavior:smooth;scroll-padding-top:8rem}summary::-webkit-details-marker{display:none}
+@media(max-width:639px){.container-shell{width:min(100% - 1.5rem,78rem)}.slant-top{clip-path:polygon(0 1.5rem,100% 0,100% 100%,0 100%)}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.logo-track,.method-progress,.map-pulse{animation:none!important}}
