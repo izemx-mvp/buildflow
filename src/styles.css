@@ -197,4 +197,10 @@
 @keyframes marquee{to{transform:translateX(-50%)}}@keyframes progress-fill{from{width:0}to{width:100%}}@keyframes map-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(1.45)}}
 html{scroll-behavior:smooth;scroll-padding-top:8rem}summary::-webkit-details-marker{display:none}
 @media(max-width:639px){.container-shell{width:min(100% - 1.5rem,78rem)}.slant-top{clip-path:polygon(0 1.5rem,100% 0,100% 100%,0 100%)}}
+@media(max-width:479px){
+  .section-pad{padding-block:3rem}
+  .outline-number{font-size:3.5rem}
+  .logo-marquee{margin-inline:-.75rem}
+  input,select,textarea{font-size:16px}
+}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.logo-track,.method-progress,.map-pulse{animation:none!important}}
