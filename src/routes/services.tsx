@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ServicesPage } from "@/components/pages";
+export const Route = createFileRoute("/services")({ head: () => ({ meta: [{ title: "Nos services — Build Flow by AG" }, { name: "description", content: "AMO, OPC et Project Management de A à Z." }, { property: "og:title", content: "Un accompagnement complet, de A à Z — Build Flow" }, { property: "og:description", content: "Neuf services pour structurer et piloter votre projet." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: ServicesPage });
